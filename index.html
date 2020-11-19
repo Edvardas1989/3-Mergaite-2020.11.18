@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mergaite</title>
-    <style>
+        <style>
+            /* Stiliaus suvienodinimas visiems elementams */
+            /* * galioja visiems elementams be isimties */
+        body,
+        body *  {
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            box-sizing: border-box;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+        }
         main {
     display: inline-block;
     width: 800px;
     background-color: #F8F8F8;
     margin-left: calc(50% - 400px);
-    
-    }
+    color: #A1A1A1;
+        }
     header {
         display: inline-block;
         width: 100%;
@@ -20,28 +30,42 @@
         color: #A1A1A1;
   }
     img {
-        display: inline-block;
-        float: left;
-        margin-left: 0;
+            display: inline-block;
+            float: left;
+            margin-left: 5%;
             margin-top: 10px;
             margin-bottom: 0px;
-            
-            
+                       
     }
     nav {
-    display: inline-block;
-    float: right;
-    margin-left: 0px;
-    margin-top: 20px;
-    margin-bottom: 0px;
+        display: inline-block;
+        float: right;
+        margin-top: 10px;
+    }
+        a {
+               display: inline-block;
+               padding: 2px;
+               padding-left: 10px;
+               padding-right: 10px;
+               margin-left: 10px;
+               text-decoration: none;
+               font-size: 18px;
+               float: left;
+               color: #A1A1A1;
+               border: 2px solid transparent;
+    }
+    a:last-of-type { 
+        text-transform: none;
+        border-color:  #A1A1A1;
+        border-radius: 22px;
     }
     section {
         display: inline-block;
         color: #A1A1A1;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         width: 100%;
-        margin-left: 5%;
-    }
+        padding: 100px;
+        box-sizing: border-box;
     }
     </style>
 </head>
@@ -53,45 +77,38 @@
             <img src="logo.png" alt="Logo">
         
             <nav style="margin-right: 4%;"> 
-               <a style="margin-right: 0%;href="#">Home</a>
-               <a style="margin-right: 0%;href="#">Tracks</a>
-                <a style="margin-right: 0%;href="#">Library</a>
-                <a style="margin-right: 0%;href="#">Community</a>
-                <a style="margin-left: 0%;href="#">SIGN IN</a>
+               <a href="#">Home</a>
+               <a href="#">Tracks</a>
+                <a href="#">Library</a>
+                <a href="#">Community</a>
+                <a href="#">SIGN IN</a>
                
-
             </nav>
         </header>
     <section>
         <img style="display: inline-block;
-        font-size: 250px;
-        margin-right: 10%;
-        text-align: center;
-        float: right; 
-        margin-top: 50px;
-        margin-bottom: 0;
-        width: 60%;
-        "src="mergaite.png" alt="Mergaite">
+            font-size: 250px;
+            text-align: center;
+            float: right; 
+            margin-top: 100px;
+            margin-bottom: 0x;
+            width: 360px;"src="mergaite.png" alt="Mergaite">
 
 
             <h1 style="font-size: 100px;
-            float: left;
-            margin-top: 170px;
-            margin-bottom: 0;
-            text-align: center;
-            width: 20%;">404
+                float: left;
+                margin-top: 150px;
+                margin-bottom: 0;
+                text-align: center;
+                width: 180px;" >404
             </h1>
 
             <p style="font-size: 20px;
-            float: left;
-            margin-left: 0;
-            margin-top: 0px;
-            margin-bottom: 0;
-            width: 30%;
-            "> The link is broken or the page has been removed. 
+                float: left;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 180px;"> The link is broken or the page has been removed. 
         </p>
-        
-    </div>
     </section>
     </main>
 </body>
